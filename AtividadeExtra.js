@@ -51,13 +51,12 @@ Saída: 1, 3, 5, 8, 9
 ------------------------------------------------------------------------
 */
 //1
-function parouimpar(num) {
-    if (num % 2 == 0) {
-      return console.log(num, "é par");
-    } else {
-      return console.log(num, "é ímpar");
-    }
-
+const imparpar = (num) => {
+  return num % 2 == 0 ? "É par!" : "O número é impar!";
+};
+console.log(imparpar(10));
+console.log(imparpar(3));
+console.log(imparpar(2));
 
 // 2
 var tabuada = 5;
@@ -76,15 +75,11 @@ console.log(tabuada, "x 10 = ", tabuada * 10);
 console.log("Fatorial de 5! =", 5 * 4 * 3 * 2 * 1);
 
 //4
-let numeros = [10,20,30,40];
-let soma = numeros[0] +numeros[1]+numeros[2]+numeros[3];
-
-
-
+let numeros = [10, 20, 30, 40];
+let soma = numeros[0] + numeros[1] + numeros[2] + numeros[3];
+console.log("A soma de todos os números é:", soma);
 
 //5
-var numeroz = [8, 3, 5, 1, 9];
-console.table(numeroz);
-
-numeroz.sort();
-console.table(numeroz);
+const ordemNumero = [8, 3, 5, 1, 9];
+console.log(ordemNumero);
+console.log(ordemNumero.sort());
