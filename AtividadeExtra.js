@@ -84,7 +84,9 @@ const ordemNumero = [8, 3, 5, 1, 9];
 console.log(ordemNumero);
 console.log(ordemNumero.sort());
 
-console.log("---------------------------------------------------------------------------")
+console.log(
+  "---------------------------------------------------------------------------"
+);
 
 // estourando o cartão - versão while - ultilizando o navegador
 // 1- Crie uma varíavel e solicite o seu nome;
@@ -96,18 +98,37 @@ console.log("-------------------------------------------------------------------
 // 7- Efetue e exiba ao usuário 5 movimentações na conta utilizando o laço while com valores aleatório;
 // 8- Exiba ao usuário novamento os dados e o saldo da conta;
 
-var nome = prompt("Qual seu nome fofo?");
-var banco = prompt("Pra qual banco você vendeu sua alma?");
-var agencia = prompt("Em qual agência?");
-var numeroConta = prompt("Qual o número da sua conta?");
-var saldo = prompt(`Informe seu saldo (Não valer mentir em bi!).`);
+/*var nome = prompt("Informe seu nome:");
+var banco = prompt("Informe seu banco:");
+var agencia = prompt ("Informe sua agência:");
+var conta = prompt ("Informe sua conta");
+var saldo =prompt ("Informe seu saldo:");
+console.log(`Olá ${nome}! Seu banco ${banco} numero de conta: ${conta} | seu saldo é ${saldo}`)*/
 
-console.log(
-  `Olá ${nome}, você é cliente do ${banco} e se cadastrou na agência ${agencia}. Sua conta é a de número ${numeroConta}, e você tem atualmente ${saldo} reais!`
-);
-
-var x = 0;
-while (x > 0) {
- console.log(`Foi tranferido R$20.00 reais de sua conta. Seu saldo é de ${saldo - 20}`)
- x++;
+var contador = 1;
+while (contador <= 5) {
+  let gasto = Math.random()*100; //Valor aleatório entre 0 e 99.999...
+  saldo -= gasto;
+  contador++;
 }
+//console.log(saldo.toFixed(2));//Deixa o valor decimal somente com 2
+console.log(`Olá ${nome}! Seu banco ${banco} numero de conta: ${conta} | seu saldo é ${saldo.toFixed(2) }`)
+
+// Jogo cara e coroa - melhor de três rodadas - aleatório - DO-WHILE
+//apresentar um placar das rodadas ex:
+var cara = 0;
+var coroa = 0;
+var contador = 1;
+
+do {let i1 = Math.random * 50;
+console.log()
+}
+
+console.log(`-------------------------------------------------`)
+console.log(`------------------------PLACAR-------------------`)
+console.log(`-------------------------------------------------`)
+console.log(`Vitórias: 'variavelVitoria`)
+console.log(`Derrotas: 'variavelDerrotas`)
+console.log(`-------------------------------------------------`)
+
+
