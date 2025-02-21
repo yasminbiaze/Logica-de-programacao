@@ -83,3 +83,31 @@ console.log("A soma de todos os números é:", soma);
 const ordemNumero = [8, 3, 5, 1, 9];
 console.log(ordemNumero);
 console.log(ordemNumero.sort());
+
+console.log("---------------------------------------------------------------------------")
+
+// estourando o cartão - versão while - ultilizando o navegador
+// 1- Crie uma varíavel e solicite o seu nome;
+// 2- Crie uma variável e solicite o nome de um banco;
+// 3- Crie uma variável e atribua o número da agência;
+// 4- Crie uma variável e solicite ao usuário o número da conta;
+// 5- Crie uma variável e solicite ao usuário o saldo da conta;
+// 6- Exiba ao usuário os dados e o saldo da conta;
+// 7- Efetue e exiba ao usuário 5 movimentações na conta utilizando o laço while com valores aleatório;
+// 8- Exiba ao usuário novamento os dados e o saldo da conta;
+
+var nome = prompt("Qual seu nome fofo?");
+var banco = prompt("Pra qual banco você vendeu sua alma?");
+var agencia = prompt("Em qual agência?");
+var numeroConta = prompt("Qual o número da sua conta?");
+var saldo = prompt(`Informe seu saldo (Não valer mentir em bi!).`);
+
+console.log(
+  `Olá ${nome}, você é cliente do ${banco} e se cadastrou na agência ${agencia}. Sua conta é a de número ${numeroConta}, e você tem atualmente ${saldo} reais!`
+);
+
+var x = 0;
+while (x > 0) {
+ console.log(`Foi tranferido R$20.00 reais de sua conta. Seu saldo é de ${saldo - 20}`)
+ x++;
+}
