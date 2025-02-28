@@ -158,7 +158,7 @@ switch (mes) {
 
     case 4:
     case 5:
-    case 6:
+     6:
     console.log("Segundo trimestre!");
     break;
 

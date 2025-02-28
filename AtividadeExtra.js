@@ -108,7 +108,7 @@ console.log(`Olá ${nome}! Seu banco ${banco} numero de conta: ${conta} | seu sa
 var contador = 1;
 while (contador <= 5) {
   let gasto = Math.random()*100; //Valor aleatório entre 0 e 99.999...
-  saldo -= gasto;
+  contador -= gasto;
   contador++;
 }
 //console.log(saldo.toFixed(2));//Deixa o valor decimal somente com 2
@@ -116,19 +116,45 @@ console.log(`Olá ${nome}! Seu banco ${banco} numero de conta: ${conta} | seu sa
 
 // Jogo cara e coroa - melhor de três rodadas - aleatório - DO-WHILE
 //apresentar um placar das rodadas ex:
+var i = 1;
 var cara = 0;
 var coroa = 0;
-var contador = 1;
-
-do {let i1 = Math.random * 50;
-console.log()
-}
-
-console.log(`-------------------------------------------------`)
-console.log(`------------------------PLACAR-------------------`)
-console.log(`-------------------------------------------------`)
-console.log(`Vitórias: 'variavelVitoria`)
-console.log(`Derrotas: 'variavelDerrotas`)
-console.log(`-------------------------------------------------`)
 
 
+do {
+    let face  = Math.random() * 100;
+    face < 50 ? cara++ : coroa++;
+    i++;
+} while (i <= 3);
+
+console.log("---------------------------------------")
+console.log("-------------------Score---------------")
+console.log("----------------------------------------")
+console.log(`cara: ${cara}`);
+console.log(`coroa: ${coroa}`);
+console.log("------------------------------------------")
+
+
+/***********************************************************************************
+ *             LISTA DE XERCÍCIOS MASTER
+ /*
+ Supondo que a população de um país A seja de a habitantes com uma 
+ taxa anual de crescimento de 3% e que a população de um país B seja 
+ de b habitantes, com uma taxa anual de crescimento de 1,5%, fazer um 
+ algoritimo que calcule e escreva o número de anos necessários para que
+  a população do país B, mantidas essas taxas de crescimento
+  */
+
+  var a = 800000;
+  var b = 950000;
+  var anos = 0;
+
+  while(a<b){
+    anos++ 
+    a += (a * 3) /100;
+    b += (b* 1.5) /100;
+    console.log(`Ano: ${anos} | População A: ${Math.round(a)} | População B: ${Math.round(b)}`);
+  }
+console.log(
+  `A quantidade de anos para a população A superar ou igualar a B é de ${anos}`
+);

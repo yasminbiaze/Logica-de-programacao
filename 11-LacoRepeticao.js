@@ -75,7 +75,7 @@ for (let i = 0; i < 1000; i++) {
   
   //Dado um vetor, calcule e exiba a quantidade de pares e ímpares
   var numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  var pares = 0;
+  var = 0;
   var impares = 0;
   //ESSE CONDICIONAL ARMAZENA UM VALOR PARA REGISTRAR NO LOG DEPOIS
   for (let i = 0; i < numeros.length; i++) {
@@ -146,4 +146,7 @@ for (let i = 0; i < 1000; i++) {
   } while (x > 10);
   
   console.log("Terminei");
+  
+  
+  
   
